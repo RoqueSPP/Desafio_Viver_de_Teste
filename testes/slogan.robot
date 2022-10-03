@@ -1,8 +1,9 @@
 *** Settings ***
+Documentation       Entra na pagina principal do sistema trocando figurinhas
 Library   Browser
 
-Test Setup      start test
-Test Teardown   finish test
+Test Setup      Start Test
+Test Teardown   Finish Test
 
 Resource        ../resources/pages/main.resource
 
@@ -10,5 +11,5 @@ Resource        ../resources/pages/main.resource
 ${LOGO}         Conectando colecionadores de figurinhas da copa.  
 
 *** Test Cases ***
-Example Test
+Deve entrar na Home do sistema
   Home Page login

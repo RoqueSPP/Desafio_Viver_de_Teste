@@ -1,6 +1,6 @@
 *** Settings ***
 
-Documentation       Logar na pagina com sucesso
+Documentation       Logar na pagina do sistema e entrar em contato com o usuario para trocar figurinhas
 Library             Browser
 
 Resource       ../resources/pages/main.resource
@@ -10,9 +10,9 @@ Resource       ../resources/pages/main.resource
 Deve negociar a figurinha Neynar Legend
      Home Page
      Fill Form  papito@gmail.com  vaibrasil
-     messageLogin
-     sourch Legend  legend
-     select sticker  Neymar Jr
-     contct
-     valid massage Whatsapp     Neymar Jr
+     MessageLogin
+     Sourch Legend   legend
+     Select Sticker  Neymar Jr
+     Contact
+     Valid massage Whatsapp     Neymar Jr
      Sleep      2

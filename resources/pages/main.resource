@@ -19,10 +19,10 @@ Home Page login
     Log To Console      ${TEXT}
     
 
-start test
+Start Test
     New Browser     headless=False      browser=chromium
     Set Browser Timeout         2
 
-finish test
+Finish Test
     Sleep           1
     Take Screenshot

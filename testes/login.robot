@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Logar na pagina com sucesso
+Documentation       Testando o Login do sistema trocando figurinhas
 Library             Browser
 Test Setup          start test
 Test Teardown       finish test
@@ -11,10 +11,10 @@ Resource       ../resources/pages/main.resource
 Deve logar com sucesso
     Home Page
      Fill Form  papito@gmail.com  vaibrasil
-    messageLogin
+    MessageLogin
 
 Não deve logar com senha incorreta
-   Home Page
+    Home Page
     Fill Form  papito@gmail.com  kkkkkjjjjhh
     MessageExpect Success
  
